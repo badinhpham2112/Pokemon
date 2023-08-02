@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="/css/Pokemon.css">
+</head>
+
+<body>
+    <%- include("./Slider.ejs") %>
+        <div class='container'>
+            <div class='insert'>
+                <div class='title'>Ứng dụng Tìm kiếm thông tin Pokemon</div>
+                <form action="/pokemon/search" method="POST">
+                    <input type="text" class='text-search' placeholder='Nhập tên Pokemon cần tìm' name="keyword">
+                    <button class='btn-search' type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+
+
+
+            <% for(let pokemon of POKEMON){ %>
+                <div class='information' onclick="showPokemonDetails('<%= pokemon.name %>')">
+                    <img class="image_Pokemon" src="<%= pokemon.image%>" />
+                    <p class='name'>
+                        <%= pokemon.name %>
+                    </p>
+                </div>
+
+
+                <% } %>
+                    <%- include("./Button.ejs") %>
+
+        </div>
+        <%- include("./Modal.ejs") %>
+            <script src="/js/Modal.js">
+            </script>
+
+
+</body>
+
+</html>

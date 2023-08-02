@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kết quả tìm kiếm</title>
+    <link rel="stylesheet" href="/css/results.css">
+</head>
+
+<body>
+    <h1>Kết quả tìm kiếm Pokemon cho từ khóa "
+        <%= keyword %>"</h1>
+    <% if (results.length > 0) { %>
+        <ul>
+            <% results.forEach(pokemon => { %>
+                <div class='information' onclick="showPokemonDetails('<%= pokemon.name %>')">
+                    <img class="image_Pokemon" src="<%= pokemon.image %>" />
+                    <p class='name'>
+                        <%= pokemon.name %>
+                    </p>
+                </div>
+
+                <% }); %>
+
+        </ul>
+        <% } else { %>
+            <p>Không tìm thấy kết quả phù hợp.</p>
+            <% } %>
+                <%- include("./Modal.ejs") %>
+                    <script src="/js/Modal.js">
+                    </script>
+</body>
+
+</html>

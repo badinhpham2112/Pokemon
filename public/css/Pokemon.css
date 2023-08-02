@@ -1,0 +1,120 @@
+body {
+    color: transparent;
+    background-image: linear-gradient(to right bottom, #00ae, #ffa400);
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+}
+
+.insert {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.title {
+    font-size: 33px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 24px 0px;
+    color: red;
+}
+
+input {
+    width: 488px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.btn-search {
+    padding: 8px;
+    color: white;
+    background-color: forestgreen;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: -4px;
+}
+
+.information {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: -30px;
+    margin-left: 387px;
+    margin-right: 387px;
+    border: 1px solid #eeeeee;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #003a;
+}
+
+.image_Pokemon {
+    width: 130px;
+    max-width: 100%;
+    height: 100px;
+    color: transparent;
+    background-image: linear-gradient(to right bottom, #00aefd, #ffa400);
+}
+
+.name {
+    padding: 0px 15px;
+    font-size: 25px;
+    font-weight: 600;
+    color: red;
+}
+
+.close-button {
+    margin-top: 20px;
+    float: right;
+    padding: 5px;
+    /* font-size: 14px; */
+    border-radius: 7px;
+    width: 78px;
+}
+
+
+/* .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Responsive modal */
+
+
+/* @media screen and (max-width: 700px) {
+    .modal-content {
+        width: 80%;
+    }
+} */

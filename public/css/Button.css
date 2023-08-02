@@ -1,0 +1,17 @@
+.information {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.btn-xemthem {
+    margin-top: 53px;
+    padding: 9px;
+    border-radius: 10px;
+    background-color: goldenrod;
+    width: 112px;
+    font-size: 14px;
+    font-weight: 600;
+}
